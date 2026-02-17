@@ -1,0 +1,68 @@
+
+<p>Some types in Python can be modified after creation (mutable), while others cannot (immutable). This distinction is crucial for understanding how Python works.</p>
+
+<h2>Immutable Types (Cannot Be Changed)</h2>
+
+<p><strong>Immutable types:</strong> <code>int</code>, <code>float</code>, <code>complex</code>, <code>bool</code>, <code>str</code>, <code>tuple</code> (and a few others)</p>
+
+<p>Once created, you cannot modify them. To "change" an immutable value, you create a new object:</p>
+
+<py-cell>x = 5
+x = x + 1
+print(x)
+
+message = "hello"
+message = message + " world"
+print(message)</py-cell>
+
+<p>Note that we're creating a new object each time we "change" an immutable value.</p>
+
+<h2>Mutable Types (Can Be Changed)</h2>
+
+<p><strong>Mutable types:</strong> <code>list</code>, <code>dict</code>, and many others</p>
+
+<p>Mutable types can be modified in place. The variable still refers to the same object, but its contents change:</p>
+
+<py-cell>my_list = [1, 2, 3]
+my_list[0] = 10
+print(my_list)
+
+my_dict = {"name": "Alice"}
+my_dict["name"] = "Bob"
+print(my_dict)</py-cell>
+
+<h2>Key Difference: Reassignment vs. Mutation</h2>
+
+<p><strong>Reassignment:</strong> Pointing the variable to a new object (works for any type)</p>
+
+<py-cell>x = 5
+x = 10</py-cell>
+
+<p><strong>Mutation:</strong> Changing the contents of an existing object (only mutable types)</p>
+
+<pre><code class="language-python">my_list = [1, 2, 3]
+my_list[0] = 10  # Change the contents of the existing list</code></pre>
+
+<h2>Multiple References</h2>
+
+<p>When multiple variables refer to the same mutable object, changes affect all of them:</p>
+
+<py-cell>x = "hello"
+y = x
+y = "goodbye" # This creates a new string object, x still points to "hello"
+print(x)
+print(y)
+
+list1 = [1, 2, 3]
+list2 = list1
+list2[0] = 10
+print(list1)</py-cell>
+
+<h2>New Mutable Objects</h2>
+<p>It is still possible to create a new mutable object by assigning a new list (or other mutable type) to a variable:</p>
+
+<py-cell>list1 = [1, 2, 3]
+list2 = list1
+list1 = [4, 5, 6] # list1 now points to a new list, list2 still points to the original
+print(list1)
+print(list2)</py-cell>

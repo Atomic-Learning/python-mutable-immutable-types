@@ -1,0 +1,22 @@
+{
+    "title": "Python: Mutable vs Immutable Types",
+    "slug": "python-mutable-immutable-types",
+    "description": "Distinction between mutable types (lists, dictionaries) that can be modified in place and immutable types (strings, ints, floats) that cannot. Demonstrates reassignment vs. mutation.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 7,
+    "prerequisites": [
+        "programming-mutability-immutability",
+        "python-strings-introduction",
+        "python-lists-item-assignment",
+        "python-dictionaries-item-assignment",
+        "programming-integers-and-floats"
+    ],
+    "related": [
+        "python-object-identity"
+    ]
+}
