@@ -8,7 +8,7 @@
     "tags": [
         "python"
     ],
-    "duration": 7,
+    "duration": 5,
     "prerequisites": [
         "programming-mutability-immutability",
         "python-strings-introduction",
