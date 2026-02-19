@@ -12,7 +12,7 @@
     "prerequisites": [
         "programming-mutability-immutability",
         "python-strings-introduction",
-        "python-lists-item-assignment",
+        "python-item-assignment",
         "programming-integers-and-floats"
     ],
     "related": [
